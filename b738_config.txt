@@ -1,0 +1,12 @@
+A
+1100
+ACF_CONFIG
+
+CMND_PRED laminar/B738/knob/starter1_up laminar/B738/spring_knob/starter_1 == 2
+CMND_PRED laminar/B738/knob/starter1_dn laminar/B738/spring_knob/starter_1 == -1
+CMND_PRED laminar/B738/knob/starter2_up laminar/B738/spring_knob/starter_2 == 2
+CMND_PRED laminar/B738/knob/starter2_dn laminar/B738/spring_knob/starter_2 == -1
+CMND_PRED laminar/B738/knob/ac_power_up laminar/B738/knob/ac_power == 6
+CMND_PRED laminar/B738/knob/ac_power_dn laminar/B738/knob/ac_power == 0
+CMND_PRED laminar/B738/knob/dc_power_up laminar/B738/knob/dc_power == 6
+CMND_PRED laminar/B738/knob/dc_power_dn laminar/B738/knob/dc_power == 0

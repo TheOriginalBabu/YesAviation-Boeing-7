@@ -1,0 +1,187 @@
+A
+1100
+VRCONFIG
+
+################################
+#TELEPORT HOTSPOTS
+################################
+
+BEGIN_TELEPORT_HOTSPOT SITTING Pilot's Seat
+	AABB -1.5 0.0 -17.0 0.0 2.0 -15.3
+	PRESET_XYZ -0.536212 1.32 -15.7
+	PRESET_PSI 0.0
+	PRESET_THE 0.0
+	PRESET_PHI 0.0
+END_TELEPORT_HOTSPOT
+
+BEGIN_TELEPORT_HOTSPOT SITTING CoPilot's Seat
+	AABB 0.0 0.0 -17.0 1.5 2.0 -15.3
+	PRESET_XYZ 0.520 1.32 -15.7
+	PRESET_PSI 0.0
+	PRESET_THE 0.0
+	PRESET_PHI 0.0
+END_TELEPORT_HOTSPOT
+
+BEGIN_MANIP drag_xy sim/cockpit2/controls/yoke_roll_ratio	sim/cockpit2/controls/yoke_pitch_ratio
+	#YOKE_MANIP_ROTATE <ptch cent x> <ptch cent y> <ptch cent z> <ptch axis x> <ptch axis y> <ptch axis z> <ptch min ang> <ptch max ang> <roll cent x> <roll cent y> <roll cent z> <roll axis x> <roll axis y> <roll axis z> <roll min ang> <roll max ang>
+	YOKE_MANIP_ROTATE -0.5075 -0.4866 2.1775 -1 0.0 0.0 10.0 -10.0 -0.5075 0.3174 2.1764 -0.0000 -0.0872 -0.9962 -107.5 107.5
+END_MANIP
+
+# CoPilot Yoke. Disabled for now until we make necessary art changes to differentiate this manipulator from the Pilot's side.
+#BEGIN_MANIP drag_xy sim/cockpit2/controls/yoke_roll_ratio	sim/cockpit2/controls/yoke_pitch_ratio
+	#YOKE_MANIP_ROTATE <ptch cent x> <ptch cent y> <ptch cent z> <ptch axis x> <ptch axis y> <ptch axis z> <ptch min ang> <ptch max ang> <roll cent x> <roll cent y> <roll cent z> <roll axis x> <roll axis y> <roll axis z> <roll min ang> <roll max ang>
+#	YOKE_MANIP_ROTATE 0.5075 -0.4866 2.1775 -1 0.0 0.0 10.0 -10.0 0.5075 0.3174 2.1764 -0.0000 -0.0872 -0.9962 -107.5 107.5
+#END_MANIP
+
+BEGIN_MANIP axis_knob sim/cockpit2/switches/generic_lights_switch[6]
+	ACTION axis_knob 0.0 1.0 0.006 sim/cockpit2/switches/generic_lights_switch[6]
+END_MANIP
+BEGIN_MANIP axis_knob sim/cockpit2/switches/generic_lights_switch[7]
+	ACTION axis_knob 0.0 1.0 0.006 sim/cockpit2/switches/generic_lights_switch[7]
+END_MANIP
+BEGIN_MANIP axis_knob sim/cockpit2/switches/generic_lights_switch[8]
+	ACTION axis_knob 0.0 1.0 0.006 sim/cockpit2/switches/generic_lights_switch[8]
+END_MANIP
+BEGIN_MANIP axis_knob sim/cockpit2/switches/generic_lights_switch[10]
+	ACTION axis_knob 0.0 1.0 0.006 sim/cockpit2/switches/generic_lights_switch[10]
+END_MANIP
+BEGIN_MANIP axis_knob sim/cockpit2/switches/generic_lights_switch[11]
+	ACTION axis_knob 0.0 1.0 0.006 sim/cockpit2/switches/generic_lights_switch[11]
+END_MANIP
+BEGIN_MANIP axis_knob sim/cockpit2/switches/generic_lights_switch[12]
+	ACTION axis_knob 0.0 1.0 0.006 sim/cockpit2/switches/generic_lights_switch[12]
+END_MANIP
+
+BEGIN_MANIP command_knob laminar/B738/knob/starter1_up laminar/B738/knob/starter1_dn
+	DEG_PER_ACTION 20
+END_MANIP
+
+BEGIN_MANIP command_knob laminar/B738/knob/starter2_up laminar/B738/knob/starter2_dn
+	DEG_PER_ACTION 20
+END_MANIP
+
+BEGIN_MANIP command_knob sim/systems/wipers_up sim/systems/wipers_dn
+	DEG_PER_ACTION 30
+END_MANIP
+
+BEGIN_MANIP axis_knob laminar/B738/pressurization/knobs/landing_alt
+	DEG_PER_ACTION 5
+END_MANIP
+BEGIN_MANIP axis_knob sim/cockpit2/pressurization/actuators/max_allowable_altitude_ft
+	DEG_PER_ACTION 5
+END_MANIP
+
+BEGIN_MANIP axis_knob laminar/B738/air/cont_cab_temp/rheostat
+	DEG_PER_ACTION 5
+END_MANIP
+BEGIN_MANIP axis_knob laminar/B738/air/fwd_cab_temp/rheostat
+	DEG_PER_ACTION 5
+END_MANIP
+BEGIN_MANIP axis_knob laminar/B738/air/aft_cab_temp/rheostat
+	DEG_PER_ACTION 5
+END_MANIP
+
+BEGIN_MANIP command_switch_up_down laminar/B738/spring_toggle_switch/APU_start_pos_up laminar/B738/spring_toggle_switch/APU_start_pos_dn
+	HOLD_MANIP
+END_MANIP
+BEGIN_MANIP command_switch_up_down laminar/B738/toggle_switch/gpu_pos_up laminar/B738/toggle_switch/gpu_pos_dn
+	HOLD_MANIP
+END_MANIP
+BEGIN_MANIP command_switch_up_down laminar/B738/switch/apuL_up laminar/B738/switch/apuL_dn
+	HOLD_MANIP
+END_MANIP
+BEGIN_MANIP command_switch_up_down laminar/B738/switch/apuR_up laminar/B738/switch/apuR_dn
+	HOLD_MANIP
+END_MANIP
+BEGIN_MANIP command_switch_up_down laminar/B738/switch/gen1_up laminar/B738/switch/gen1_dn
+	HOLD_MANIP
+END_MANIP
+BEGIN_MANIP command_switch_up_down laminar/B738/switch/gen2_up laminar/B738/switch/gen2_dn
+	HOLD_MANIP
+END_MANIP
+
+BEGIN_MANIP command_knob sim/instruments/EFIS_mode_up sim/instruments/EFIS_mode_dn
+	DEG_PER_ACTION 20
+END_MANIP
+BEGIN_MANIP command_knob sim/instruments/map_zoom_out sim/instruments/map_zoom_in
+	DEG_PER_ACTION 30
+END_MANIP
+BEGIN_MANIP command_knob laminar/B738/EFIS_control/capt/baro_in_hpa_up laminar/B738/EFIS_control/capt/baro_in_hpa_dn
+	DEG_PER_ACTION 60
+END_MANIP
+BEGIN_MANIP command_knob laminar/B738/EFIS_control/fo/baro_in_hpa_up laminar/B738/EFIS_control/fo/baro_in_hpa_dn
+	DEG_PER_ACTION 60
+END_MANIP
+
+BEGIN_MANIP command_knob sim/radios/obs_HSI_up sim/radios/obs_HSI_down
+	ACTION axis_knob 0.0 360.0 0.1 sim/cockpit2/radios/actuators/hsi_obs_deg_mag_pilot
+	WRAP_MANIP
+	DEG_PER_ACTION 0.3
+END_MANIP
+
+BEGIN_MANIP command_knob sim/radios/copilot_obs_HSI_up sim/radios/copilot_obs_HSI_down
+	ACTION axis_knob 0.0 360.0 0.1 sim/cockpit2/radios/actuators/hsi_obs_deg_mag_copilot
+	WRAP_MANIP
+	DEG_PER_ACTION 0.3
+END_MANIP
+
+BEGIN_MANIP command_knob sim/autopilot/heading_up sim/autopilot/heading_down
+	ACTION axis_knob 0.0 360.0 0.1 sim/cockpit2/autopilot/heading_dial_deg_mag_pilot
+	WRAP_MANIP
+	DEG_PER_ACTION 0.3
+END_MANIP
+
+BEGIN_MANIP command_knob laminar/B738/autopilot/bank_angle_up laminar/B738/autopilot/bank_angle_dn
+	DEG_PER_ACTION 20
+END_MANIP
+
+BEGIN_MANIP command_knob sim/autopilot/altitude_up sim/autopilot/altitude_down
+	DEG_PER_ACTION 0.3
+END_MANIP
+
+BEGIN_MANIP command_knob sim/flight_controls/brakes_up_auto sim/flight_controls/brakes_dn_auto
+	DEG_PER_ACTION 45
+END_MANIP
+
+BEGIN_MANIP command_switch_left_right sim/flight_controls/aileron_trim_right sim/flight_controls/aileron_trim_left
+	HOLD_MANIP
+END_MANIP
+
+BEGIN_MANIP command_knob laminar/B738/rtp_L/freq_MHz/sel_dial_up laminar/B738/rtp_L/freq_MHz/sel_dial_dn
+	DEG_PER_ACTION 5
+END_MANIP
+BEGIN_MANIP command_knob laminar/B738/rtp_L/freq_khz/sel_dial_up laminar/B738/rtp_L/freq_khz/sel_dial_dn
+	DEG_PER_ACTION 5
+END_MANIP
+BEGIN_MANIP command_knob laminar/B738/rtp_R/freq_MHz/sel_dial_up laminar/B738/rtp_R/freq_MHz/sel_dial_dn
+	DEG_PER_ACTION 5
+END_MANIP
+BEGIN_MANIP command_knob laminar/B738/rtp_R/freq_khz/sel_dial_up laminar/B738/rtp_R/freq_khz/sel_dial_dn
+	DEG_PER_ACTION 5
+END_MANIP
+
+BEGIN_MANIP command_knob laminar/B738/knob/transponder_mode_up laminar/B738/knob/transponder_mode_dn
+	DEG_PER_ACTION 20
+END_MANIP
+
+BEGIN_MANIP command_knob laminar/B738/fire/engine01/ext_switch_R laminar/B738/fire/engine01/ext_switch_L
+	DEG_PER_ACTION 20
+END_MANIP
+BEGIN_MANIP command_knob laminar/B738/fire/engine02/ext_switch_R laminar/B738/fire/engine02/ext_switch_L
+	DEG_PER_ACTION 20
+END_MANIP
+
+BEGIN_MANIP command_knob laminar/B738/toggle_switch/crossfeed_valve_on laminar/B738/toggle_switch/crossfeed_valve_off
+	DEG_PER_ACTION 60
+END_MANIP
+
+BEGIN_MANIP command_knob laminar/B738/knob/ac_power_up laminar/B738/knob/ac_power_dn
+	DEG_PER_ACTION 20
+END_MANIP
+BEGIN_MANIP command_knob laminar/B738/knob/dc_power_up laminar/B738/knob/dc_power_dn
+	DEG_PER_ACTION 20
+END_MANIP
+
+BEGIN_MANIP command_switch_up_down sim/autopilot/vertical_speed_down sim/autopilot/vertical_speed_up
+	SWITCH_THRESHOLD 2 0.02
+END_MANIP
